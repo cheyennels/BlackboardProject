@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/header-styles.css">
+    <link rel="stylesheet" href="styles/content-styles.css">
+    <link rel="stylesheet" href="styles/footer-styles.css">
+
+    <!-- favicon -->
+    <link rel="icon" 
+      type="image/ico" 
+      href="./Assets/favicon.ico">
+
+    <title>Lake Park School District</title>
+    
+</head>
+<body>
+    <header>
+        <!-- Navbar with links -->
+        <div class="mobile-nav">
+            <span>
+                <button>
+                    <svg id="Hamburger_Menu" xmlns="http://www.w3.org/2000/svg" width="35.724" height="22.217" viewBox="0 0 35.724 22.217">
+                        <g data-name="Hamburger Menu" transform="translate(0 0.006)">
+                          <g id="editor_list_view_hambuger_menu_outline_stroke" data-name="editor list view hambuger menu outline stroke" transform="translate(0 -0.006)">
+                            <path id="path-1" d="M.929,0A.971.971,0,0,0,0,1,.971.971,0,0,0,.929,2.01H34.795A.971.971,0,0,0,35.724,1,.971.971,0,0,0,34.795,0Zm0,10.1a1.01,1.01,0,0,0,0,2.014H34.795a1.01,1.01,0,0,0,0-2.014Zm0,10.1a1.031,1.031,0,0,0,0,2.014H34.795a1.031,1.031,0,0,0,0-2.014Z" transform="translate(0 0.006)" fill="#fff"/>
+                            <path id="path-1-2" data-name="path-1" d="M.929,0A.971.971,0,0,0,0,1,.971.971,0,0,0,.929,2.01H34.795A.971.971,0,0,0,35.724,1,.971.971,0,0,0,34.795,0Zm0,10.1a1.01,1.01,0,0,0,0,2.014H34.795a1.01,1.01,0,0,0,0-2.014Zm0,10.1a1.031,1.031,0,0,0,0,2.014H34.795a1.031,1.031,0,0,0,0-2.014Z" transform="translate(0 0.006)" fill="none"/>
+                          </g>
+                        </g>
+                      </svg>
+                </button>
+                <h3>MENU</h3>
+                </span>
+               
+                <!-- Search  -->
+                <button id="mobile-search" class="mobile-search-button">
+                    <img 
+                        src="./Assets/SVG/Search Icons/Magnifying Glass.svg" 
+                        alt="mobile-search"
+                    />
+                </button>
+                <button id="mobile-exit" class="mobile-search-button mobile-close" type="submit" id="exit">
+                    <img 
+                        src="./Assets/SVG/Search Icons/X - Close.svg" 
+                        alt="exit search"
+                    />
+                </button>
+            <div id="mobile-search-div">
+                <input id="mobile-search-input" type="text" placeholder="Search.." name="search">
+                <button class="mobile-close" id="mobile-submit" type="submit" style="border: none">
+                    <img 
+                        src="./Assets/SVG/Search Icons/Arrow.svg" 
+                        alt="submit"
+                    />
+                </button>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <ul style="padding-left: 0">
+                <li id="home" class="item">Home</li>
+                <li class="item">About Us
+                    <ul class="dropdown">
+                      <li class="hover-item">
+                        <a href="">General Information</a>
+                      </li>
+                      <li class="hover-item">
+                        <a href="">Lake Park History</a>
+                      </li>
+                      <li class="hover-item">
+                        <a href="">In the News</a>
+                      </li>
+                      <li class="hover-item">
+                        <a href="">Contact Us</a>
+                      </li>
+                    </ul>
+                </li>
+                <li class="item">Departments</li>
+                <li class="item">Programs</li>
+                <li class="item">Board</li>
+                <li class="item">Families</li>
+                <li class="item">Staff</li>
+            </ul>
+            <!-- Schools button -->
+            <div id="nav-end">
+                <ul>
+                    <li class="school-button">
+                        <img 
+                            src="./Assets/HP – Hovers/arrow.svg" 
+                            alt="arrow"
+                            id="arrow"
+                        />
+                        <img 
+                            src="./Assets/HP – Hovers/arrow-hover.svg" 
+                            alt="arrow"
+                            id="arrow-hover"
+                        />
+                        SCHOOLS
+                        <ul class="school-dropdown">
+                        <li class="hover-item">
+                            <a href="">Lake Park Elementary</a>
+                        </li>
+                        <li class="hover-item">
+                            <a href="">Lake Park Middle School</a>
+                        </li>
+                        <li class="hover-item">
+                            <a href="">Lake Park High School</a>
+                        </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- Search  -->
+                <button id="search" class="search-button">
+                    <img 
+                        src="./Assets/SVG/Search Icons/Magnifying Glass.svg" 
+                        alt="search"
+                    />
+                </button>
+                <button id="exit" class="search-button close" type="submit" id="exit">
+                    <img 
+                        src="./Assets/SVG/Search Icons/X - Close.svg" 
+                        alt="exit search"
+                    />
+                </button>
+            </div>
+        </div>
+            <div id="search-div">
+                <input id="search-input" type="text" placeholder="Search.." name="search">
+                <button class="close" id="submit" type="submit" style="border: none">
+                    <img 
+                        src="./Assets/SVG/Search Icons/Arrow.svg" 
+                        alt="submit"
+                    />
+                </button>
+            </div>
+    </header>
+    <!-- Banner -->
+    <section class="banner">
+        <div class="logo-div">
+            <img 
+                src="./Assets/logo.png" 
+                alt="logo"
+            /> 
+            <span class="text-span">
+                <h1>Lake Park School District</h1>
+                <h5>Let's Advance Learning</h5>
+            </span>   
+        </div>
+
+
+        <span class="mobile-span">
+            <img 
+                src="./Assets/logo.png" 
+                alt="logo"
+            /> 
+            <h1>Lake Park School District</h1>
+            <h5>Let's Advance Learning</h5>
+        </span> 
+
+
+        <!-- Animated Links -->
+        <div class="info-div">
+            <button>
+                <img 
+                    src="./Assets/SVG/Global Icons/Envelope 5.svg" 
+                    alt="contact us"
+                    class="icon"
+                /> 
+                <p>Contact Us</p>
+            </button>
+            <button>
+                <img 
+                    src="./Assets/SVG/Global Icons/Bus.svg" 
+                    alt="bus routes"
+                    class="icon"
+                /> 
+                <p>Bus Routes</p>
+            </button>
+            <button>
+                <img 
+                    src="./Assets/SVG/Global Icons/Calendar 6.svg" 
+                    alt="events"
+                    class="icon"
+                /> 
+                <p>Events</p>
+            </button>
+        </div>
+    </section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="image-rotate">
+            <div class="image-rotate-main">
+                <img  
+                    src="./Assets/Main Images/Main Image.png" 
+                    class="bg-image spot1"
+                    style="height: 100%"
+                />           
+                <span class="button-span">
+                    <button id="button-left">
+                        <svg id="left" xmlns="http://www.w3.org/2000/svg" width="8.706" height="12.971" viewBox="0 0 8.706 12.971">
+                            <path  data-name="Left Arrow" d="M6.506,5.778C7.993,4,9.433,2.259,10.891.546a1.76,1.76,0,0,1,.894-.527.96.96,0,0,1,1.082.574,1.085,1.085,0,0,1-.151,1.27L9.593,5.618,7.447,8.177a1.125,1.125,0,0,1-1.882,0C3.844,6.107,2.112,4.047.409,1.958a1.769,1.769,0,0,1-.367-.875A1.032,1.032,0,0,1,.776.048,1.107,1.107,0,0,1,2.037.424C3.157,1.76,4.267,3.1,5.387,4.432Z" transform="translate(8.686 -0.036) rotate(90)" />
+                        </svg>
+                    </button>
+
+                    <button id="button-pause">
+                        <svg id="pause" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8.647" height="13.564" viewBox="0 0 8.647 13.564">
+                            <defs>
+                              <clipPath id="clip-path">
+                                <rect id="Rectangle_407" data-name="Rectangle 407" width="8.647" height="13.564" fill="none"/>
+                              </clipPath>
+                            </defs>
+                            <g clip-path="url(#clip-path)">
+                              <path id="Path_948" data-name="Path 948" d="M1.255,13.531h0A1.255,1.255,0,0,1,0,12.276V1.222a1.272,1.272,0,1,1,2.543,0V12.276a1.255,1.255,0,0,1-1.289,1.255" transform="translate(0 0.033)"/>
+                              <path id="Path_949" data-name="Path 949" d="M19.355,13.531h0A1.255,1.255,0,0,1,18.1,12.276V1.222a1.272,1.272,0,1,1,2.543,0V12.276a1.255,1.255,0,0,1-1.289,1.255" transform="translate(-11.962 0.033)"/>
+                            </g>
+                          </svg>
+                    </button>
+                    <button id="button-right">
+                        <svg id="right" xmlns="http://www.w3.org/2000/svg" width="8.706" height="12.971" viewBox="0 0 8.706 12.971">
+                            <path data-name="Left Arrow" d="M6.506,5.778C7.993,4,9.433,2.259,10.891.546a1.76,1.76,0,0,1,.894-.527.96.96,0,0,1,1.082.574,1.085,1.085,0,0,1-.151,1.27L9.593,5.618,7.447,8.177a1.125,1.125,0,0,1-1.882,0C3.844,6.107,2.112,4.047.409,1.958a1.769,1.769,0,0,1-.367-.875A1.032,1.032,0,0,1,.776.048,1.107,1.107,0,0,1,2.037.424C3.157,1.76,4.267,3.1,5.387,4.432Z" transform="translate(8.686 -0.036) rotate(90)"/>
+                        </svg>
+                    </button>
+                </span>
+            </div>
+            <div class="image-rotate-secondary">
+                <div class="text-overlay">
+                    <h3>Welcome to our Site!</h3>
+                    <p>
+                        Ullamcorper arcu ante duis mus condimentum dapibus ullamcorper venenatis torquent parturient condimentum facilisis diam lacinia.
+                    </p>
+                    <button>LEARN MORE</button>
+                </div>
+                    <img 
+                    src="./Assets/Main Images/Soccer image.png" 
+                    class="bg-image spot2"
+                    style="height: 100%"
+                    />
+                
+            </div>
+        </div>
+    </section>
+    <!-- News Section -->
+    <section class="news">
+        <div class="news-header">
+            <h2>Current News</h2>
+            <button>MORE</button>
+        </div>
+        <div class="news-grid">
+            <div class="news-item">
+                <div class="img-box">
+                    <img 
+                        src="./Assets/News Images/kimberly-farmer-287677-unsplash.png" 
+                        alt="a stack of books"
+                        class="news-image"
+                    >
+                </div>
+                <h5>Student Book Fair</h5>
+                <p>Ullamcorper arcu ante duis mus condimentum dapibus ullamcorper venenatis torquent parturient condimentum facilisis diam lacinia.</p>
+            </div>
+            <div class="news-item">
+                <div class="img-box">
+                    <img 
+                        src="./Assets/News Images/187150362_4167305129957011_4787881228705621978_n.png" 
+                        alt="student taking notes"
+                        class="news-image"
+                    >
+                </div>
+                <h5>Personalized Learning</h5>
+                <p>Venenatis feugiat velit blandit aliquam nullam lectus odio a ut suspendisse ullamcorper parturient nascetur lobortis.</p>
+            </div>
+            <div class="news-item">
+                <div class="img-box">
+                    <img 
+                        src="./Assets/News Images/bus-878697_1920.png" 
+                        alt="school bus"
+                        class="news-image"
+                    >
+                </div>
+                <h5>Bus Safety Month</h5>
+                <p>Leo aenean elementum senectus ut tincidunt conubia nec a metus parturient volutpat venenatis.</p>
+            </div>
+            <div class="news-item">
+                <div class="img-box">
+                    <img 
+                        src="./Assets/News Images/186027642_4150830851604439_2713297670727753817_n.png" 
+                        alt="student with books"
+                        class="news-image"
+                    >
+                </div>
+                <h5>After School Tutoring</h5>
+                <p>Ad dapibus parturient consectetur nec aptent aenean metus ullamcorper et nisi pulvinar lectus nisi suscipit pulvinar vestibulum malesuada.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Additional Content Section -->
+    <section class="content">
+        <div class="announce-div div">
+            <h4>Announcements</h4>
+                <p>
+                    Lacinia interdum hac luctus suspendisse odio ridiculus blandit suspendisse vestibulum montes ad condimentum mus metus scelerisque a vestibulum lobortis potenti condimentum scelerisque pulvinar.
+                </p>
+                <p>
+                    Tellus proin elit litora nisi a varius lacus ullamcorper placerat ridiculus sit eros id dignissim a aliquet.
+                </p>
+                <p>
+                    Augue sodales ullamcorper facilisis elit vestibulum adipiscing a laoreet eros vestibulum ut vivamus a turpis justo in vestibulum phasellus et odio sed ad leo.
+                </p>
+                <button style="margin-top: 30px;">MORE</button>
+        </div>
+        <div class="shortcut-div div">
+            <h4>Site Shortcuts</h4>
+                <span class="a-span">
+                    <a href="">Tip Line</a><br/>
+                    <a href="">Stay Informed - Weekly e-Newsletter</a><br/>
+                    <a href="">Volunteer Opportunities</a><br/>
+                    <a href="">Report Bullying</a><br/>
+                    <a href="">Child Find - Information About Special Education Services</a><br/>
+                    <a href="">System of Great Schools Information</a><br/>
+                </span>
+        </div>        
+    </section>
+    <!-- Footer -->
+    <footer>
+    <section class="info">
+        <div class="address-div">
+            <h3>3395 Harrison Avenue, Beaumont, TX 77706</h3>
+            <h3>Phone: 409-617-5000</h3>
+        </div>
+        <div class="button-div">
+            <button>SITE MAP</button>
+            <div id="center-line"></div>
+            <button class="backToTop">
+                <div id="top">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8.706" height="12.971" viewBox="0 0 8.706 12.971">
+                        <path id="Left_Arrow" data-name="Left Arrow" d="M6.506,5.778C7.993,4,9.433,2.259,10.891.546a1.76,1.76,0,0,1,.894-.527.96.96,0,0,1,1.082.574,1.085,1.085,0,0,1-.151,1.27L9.593,5.618,7.447,8.177a1.125,1.125,0,0,1-1.882,0C3.844,6.107,2.112,4.047.409,1.958a1.769,1.769,0,0,1-.367-.875A1.032,1.032,0,0,1,.776.048,1.107,1.107,0,0,1,2.037.424C3.157,1.76,4.267,3.1,5.387,4.432Z" transform="translate(8.686 -0.036) rotate(90)" fill="#fff"/>
+                    </svg>
+                </div>
+                <div id="top-focus">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8.706" height="12.971" viewBox="0 0 8.706 12.971">
+                        <path id="Left_Arrow" data-name="Left Arrow" d="M6.506,5.778C7.993,4,9.433,2.259,10.891.546a1.76,1.76,0,0,1,.894-.527.96.96,0,0,1,1.082.574,1.085,1.085,0,0,1-.151,1.27L9.593,5.618,7.447,8.177a1.125,1.125,0,0,1-1.882,0C3.844,6.107,2.112,4.047.409,1.958a1.769,1.769,0,0,1-.367-.875A1.032,1.032,0,0,1,.776.048,1.107,1.107,0,0,1,2.037.424C3.157,1.76,4.267,3.1,5.387,4.432Z" transform="translate(8.686 -0.036) rotate(90)" fill="#113A55"/>
+                    </svg>
+                </div>
+               <p>BACK TO TOP</p>
+            </button>
+        </div>
+        <div class="address-div">
+            <h5>Accreditation</h5>
+            <h5>Non-Discrimination Policy</h5>
+            <h5>Newsletter</h5>
+            <h5>Contact Us</h5>
+        </div>
+        <div class="sm-div">
+            <a href="">Follow Us</a>
+            <button>
+                <svg style="margin-left: 40px;" xmlns="http://www.w3.org/2000/svg" width="21.883" height="21.903" viewBox="0 0 21.883 21.903">
+                    <path id="Path_1055" data-name="Path 1055" d="M11,0A11,11,0,0,0,9.3,21.8V14.2H6.5V11H9.3V8.6c0-2.8,1.6-4.3,4.2-4.3a16.9,16.9,0,0,1,2.5.2V7.2H14.5a1.6,1.6,0,0,0-1.8,1.7V11h3l-.5,3.2H12.7v7.7A11,11,0,0,0,11,0" transform="translate(-0.357 0.003)" fill="#fff"/>
+                </svg>
+            </button>  
+            <button>
+                <svg style="margin-left: 40px;" xmlns="http://www.w3.org/2000/svg" width="20.9" height="17.504" viewBox="0 0 20.9 17.504">
+                    <path id="Path_1036" data-name="Path 1036" d="M57.3,5.1a11.2,11.2,0,0,1-2.8.9,5.6,5.6,0,0,0,2.1-2.8,14.2,14.2,0,0,1-2.2,1.2l-.5-.5a3.6,3.6,0,0,0-2.8-1.4,4.1,4.1,0,0,0-4.2,4.2,2.7,2.7,0,0,0,.1.7h-.1c-4.2,0-6.9-.9-9.1-3.5A4.1,4.1,0,0,0,37.1,6a4.3,4.3,0,0,0,2.1,3.5,5.1,5.1,0,0,1-2.1-.7c0,2.1,2.9,4.5,4.9,4.9-.7.7-3.2.1-3.5,0a4.3,4.3,0,0,0,4.2,2.8,8.3,8.3,0,0,1-5.2,1.7h-1a13.4,13.4,0,0,0,7,1.8c7.9,0,11.8-6.2,11.8-11.8V7.5a8.9,8.9,0,0,0,2.1-2.3" transform="translate(-36.5 -2.499)" fill="#fff"/>
+                </svg>
+            </button>
+        </div>
+    </section>
+    </footer>
+
+    <script>
+
+        // Scripts for search button 
+
+        document.querySelectorAll(".search-button").forEach(element => {
+            element.addEventListener("click", function() {
+            document.getElementById("search-div").style.visibility = "visible";
+            document.getElementById("search").style.visibility = "hidden";
+            document.getElementById("exit").style.visibility = "visible";
+            console.log("open")
+        });
+        });
+
+        document.querySelectorAll(".close").forEach(element => {
+            element.addEventListener("click", function() {
+            document.getElementById("search-div").style.visibility = "hidden";
+            document.getElementById("exit").style.visibility = "hidden";
+            document.getElementById("search").style.visibility = "visible";
+            console.log("close")
+         });
+
+
+        });
+
+                // Scripts for mobile search button 
+
+                document.querySelectorAll(".mobile-search-button").forEach(element => {
+            element.addEventListener("click", function() {
+            document.getElementById("mobile-search-div").style.visibility = "visible";
+            document.getElementById("mobile-search").style.visibility = "hidden";
+            document.getElementById("mobile-exit").style.visibility = "visible";
+            console.log("open")
+        });
+        });
+
+        document.querySelectorAll(".mobile-close").forEach(element => {
+            element.addEventListener("click", function() {
+            document.getElementById("mobile-search-div").style.visibility = "hidden";
+            document.getElementById("mobile-exit").style.visibility = "hidden";
+            document.getElementById("mobile-search").style.visibility = "visible";
+            console.log("close")
+         });
+        });
+ 
+
+        // Scripts for image slider
+
+        document.getElementById("button-left").addEventListener("click",  () => {cycleSlides('back'); console.log("back")});
+        document.getElementById("button-right").addEventListener("click", () => {cycleSlides('forward'); console.log("forward")} );
+
+
+        function cycleSlides(direction) {
+         let imageArray = document.querySelectorAll('.bg-image')
+         let srcArray = []
+         imageArray.forEach(image => {
+             srcArray.push(image.attributes.src.value)
+         })
+            if(direction === "back") {
+                srcArray.unshift(srcArray.pop())
+                for(let i = 0; i < imageArray.length; i++) {
+                    imageArray[i].attributes.src.value = srcArray[i]
+                }
+            } else {
+                srcArray.push(srcArray.shift())
+                for(let i = 0; i < imageArray.length; i++) {
+                    imageArray[i].attributes.src.value = srcArray[i]
+                }
+            } 
+         }
+
+        //  Scripts for scroll to top
+
+        document.querySelector(".backToTop").addEventListener("click",  topFunction);
+
+        function topFunction() {
+        console.log("click");
+        document.documentElement.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                })
+        }
+
+    </script>
+</body>
+</html>

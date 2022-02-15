@@ -1,0 +1,171 @@
+
+/* -- Footer Styles -- */
+
+/* address div */
+
+.info {
+    width: 100vw;
+}
+
+.address-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 40px 0px;
+    justify-content: center;
+}
+
+.address-div h3 {
+    font: normal normal bold 20px/25px Sintony;
+    color: #1C5687;
+    padding: 0px 30px;
+    cursor: pointer;
+}
+
+.address-div h3:first-of-type {
+    border-right: solid 2px grey;
+}
+
+.address-div h5 {
+    font: normal normal bold 16px/25px Sintony;
+    color: #1C5687;
+    padding: 0px 30px;
+    border-right: solid 2px grey;
+    cursor: pointer;
+}
+
+.address-div h5:last-of-type {
+    border-right: none;
+}
+
+.address-div h3:hover {
+    color: #113A55;
+    text-decoration: underline;
+}
+
+.address-div h5:hover {
+    color: #113A55;
+    text-decoration: underline;
+}
+
+.button-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#center-line {
+    width: 100vw;
+    height: 1px;
+    background-color: #7d9299;
+    position: absolute;
+    z-index: 0;
+}
+
+.button-div button {
+    width: auto;
+    border-radius: 5px;
+    padding: 10px 20px;
+    z-index: 100;
+    margin: 20px;
+    background-color: #113A55;
+    color: white;
+    font-size: 16px;
+    border: none;
+}
+
+.button-div button p {
+    margin-left: 1rem;
+}
+
+.button-div button:hover {
+    background-color: white;
+    color: #113A55;
+    outline: 1px solid #7d9299;
+}
+
+.backToTop {
+    display: flex;
+   justify-content: space-between;
+}
+
+#top  {
+    visibility: visible;
+}
+
+#top-focus {
+   display: none
+ 
+}
+
+.button-div button:hover #top {
+   display: none
+  
+}
+
+.button-div button:hover #top-focus {
+   display: block;
+}
+
+.button-div .backToTop div svg {
+    transform: rotate(90deg);
+}
+
+.sm-div {
+    width: 100vw;
+    height: 80px;
+    background-color: #1c5687;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.sm-div a {
+    font: normal normal bold 22px/78px Merriweather;
+    color: white;
+    text-decoration: none;
+}
+
+.sm-div button {
+    border: none;
+    background-color: transparent;
+}
+
+.sm-div svg:hover {
+    transform: translateY(-5px);
+}
+
+@media screen and (max-width: 414px) {
+
+    .address-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0px;
+        height: fit-content;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .address-div h3:first-of-type {
+        border-right: none;
+    }
+
+    .address-div h3 {
+        padding: 10px 0px;
+    }
+
+    .button-div button {
+        padding: 10px 15px;
+        margin: 10px;
+    }
+
+    .address-div h5 {
+    color: #113A55;
+    margin: 5px;
+    border-right: none;
+}
+
+}

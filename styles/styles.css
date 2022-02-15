@@ -1,0 +1,26 @@
+/* Normalize */
+
+*, 
+      *::before,
+      *::after {
+        margin: 0;
+        box-sizing: border-box;
+      } 
+
+/* -- Global -- */
+
+
+html {
+    background-color: white;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+
+
+
+
+

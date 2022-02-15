@@ -1,0 +1,631 @@
+
+/* -- Content Styles -- */
+
+/* banner styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sintony&display=swap');
+
+.banner {
+    width: 100vw;
+    height: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 91px;
+    padding-right: 98px;
+    z-index: -1;
+}
+
+.logo-div {
+    width: fit-content;
+    height: 116px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -10;
+}
+
+.text-span {
+    height: 116px;
+    margin-left: 20px;
+}
+
+.text-span > h1 {
+    color: #1C5687;
+    font: normal normal bold 30px/78px Merriweather;
+    height: 65px;
+}
+
+.text-span > h5 {
+    font: normal normal normal 20px/25px Sintony;
+    height: 38px;
+}
+
+.info-div {
+    width: 320px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.info-div > button {
+    border: none;
+    background-color: white;
+}
+
+.info-div > p {
+    font: normal normal normal 16px/23px Sintony;
+    color: #333333;
+    position: absolute;
+}
+
+.icon {
+    margin-bottom: 5px;
+    transition: transform 250ms;
+}
+
+button:hover .icon {
+    transform: translateY(-5px);
+}
+
+/* hero styles */
+
+.hero {
+    width: 100vw;
+    height: fit-content;
+    background-color: #1C5687;
+}
+
+.image-rotate {
+    max-width: 1640px;
+    margin:  0 auto;
+    width: 100vw;
+    height: 585px;
+    display: flex;
+    align-items:flex-end;
+    overflow: hidden;
+}
+
+.image-rotate-main {
+    max-width: 60%;
+    display: flex;
+    align-items:flex-end;
+    position: relative;
+    overflow: hidden;
+}
+
+/* image slider */
+
+.bg-image {
+    z-index: 1;
+}
+
+.button-span {
+    width: 120px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+}
+
+.button-span > button {
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1C5687;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    opacity: 0.9;
+}
+
+.button-span > button:hover {
+    background-color: #f7f7f7;
+}
+
+.school-button #arrow {
+    visibility: visible;
+}
+
+.school-button:hover #arrow {
+    visibility: hidden;
+    width: 0px;
+}
+
+.school-button #arrow-hover {
+    visibility: hidden;
+}
+
+.school-button:hover #arrow-hover {
+    visibility: visible;
+    transform: rotate(180deg);
+    margin-right: 8px;
+}
+
+#button-left svg {
+    fill: white;
+}
+
+#button-left:hover svg {
+    fill: #113A55;
+}
+
+#button-pause svg {
+    fill: white;
+}
+
+#button-pause:hover svg {
+    fill: #113A55;
+}
+
+#button-right svg {
+    fill: white;
+    transform: rotate(180deg);
+}
+
+#button-right:hover svg {
+    fill: #113A55;
+    transform: rotate(180deg);
+}
+
+/* side image */
+
+.image-rotate-secondary {
+    max-width: 40%;
+    position: relative;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(28, 86, 135, 0.9);
+    padding: 3rem;
+}
+
+.text-overlay h3 {
+    color: white;
+    font: normal normal bold 22px/22px Merriweather;
+    margin-top: 165px;
+    margin-bottom: 20px;
+}
+
+.text-overlay p {
+    color: white;
+    font: normal normal normal 16px/16px Sintony;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    width: 479px;
+}
+
+.text-overlay button {
+    border: none;
+    border-radius: 5px;
+    width: 146px;
+    height: 40px;
+    background-color: #113A55;
+    color: white;
+    font-size: 16px;
+}
+
+.text-overlay button:hover {
+    background-color: white;
+    color: #113A55;
+}
+
+/* news section */
+
+.news-header {
+    /* max-width: 1466px; */
+    max-width: 87vw;
+    height: auto;
+    padding: 40px 90px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font: normal normal bold 34px/34px Merriweather;
+    color: #1c5687;
+}
+
+.news-header button {
+    border: none;
+    border-radius: 5px;
+    width: 87px;
+    height: 45px;
+    background-color: #113A55;
+    color: white;
+    font-size: 16px;
+}
+
+.news-header button:hover {
+    background-color: white;
+    color: #113A55;
+    border: 1px solid #7d9299;
+}
+
+.news-grid {
+    max-width: 90vw;
+    /* max-width: 1644px; */
+    padding: 0px 90px;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 330px));
+    grid-auto-rows: minmax(200px, auto);
+    grid-row-gap: 3em;
+    grid-column-gap: 3em;
+    padding-bottom: auto;
+}
+
+.news-item {
+    height: auto;
+}
+
+.img-box {
+    width: 330px;
+    height: 240px;
+    overflow: hidden;
+}
+
+.news-image {
+    max-width: 100%;
+    transition: all 0.3s;
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+}
+
+.news-item:hover .news-image {
+    transform: scale(1.1);
+}
+
+.news-item:hover h5  {
+    text-decoration: underline;
+}
+
+.news-item:hover {
+    cursor: pointer;
+}
+
+.news-item h5 {
+    font: normal normal bold 22px/22px Sintony;
+    color: #1c5687;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.news-item p {
+    font: normal normal normal 16px/16px Sintony;
+    line-height: 1.3;
+}
+
+/* additional content section */
+
+.content {
+    height: auto;
+    width: 100vw;
+    padding: 60px 90px;
+    background-color: #1c5687;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+
+.div {
+    width: 720px;
+    height: 470px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 30px;
+    padding-bottom: 40px;
+}
+
+.a-span {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.div h4 {
+    font: normal normal bold 26px/36px Merriweather;
+    color: #1c5687;
+    margin-bottom: 30px;
+}
+
+.div p {
+    font: normal normal normal 16px/25px Sintony;
+    border-bottom: solid 1px #1C5687;
+    padding: 5px 0px;
+}
+
+.div a {
+    font: normal normal bold 16px/25px Sintony;
+    border-bottom: solid 1px #1C5687;
+    text-decoration: none;
+    padding-bottom: 10px;
+    color:#1C5687;
+    width: 100%;
+    align-self: center;
+}
+
+div a:hover {
+    border-bottom: solid 3px #1C5687;
+}
+
+.announce-div p:nth-of-type(3) {
+    border-bottom: none;
+}
+
+.announce-div button {
+    border: none;
+    border-radius: 5px;
+    width: 87px;
+    height: 45px;
+    background-color: #113A55;
+    color: white;
+    font-size: 16px;
+}
+
+.announce-div button:hover {
+    background-color: white;
+    color: #113A55;
+    border: 1px solid #7d9299;
+}
+
+@media screen and (max-width: 850px) {
+
+    .info-div {
+        display: none;
+    }
+
+    .banner {
+        width: 100vw;
+        height: 135px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 90px;
+        z-index: -1;
+    }
+
+    .hero {
+        background-color: white;
+    } 
+
+    .image-rotate {
+        width: 100vw;
+        height: 585px;
+        display: flex;
+        flex-flow: row wrap;
+        align-items:flex-end;
+        overflow: hidden;
+    }
+    
+    .image-rotate-main {
+        max-width: 100vw;
+        display: flex;
+        align-items:flex-end;
+        position: relative;
+        overflow: hidden;
+    }
+    .button-span {
+        bottom: 200px;
+    }
+
+    .image-rotate-secondary {
+        width: 100vw;
+        height: 183px;
+        position: relative;
+        margin-top: -183px;
+        z-index: 100;
+    }
+
+    .text-overlay {
+        width: 100vw;
+        background-color: rgba(28, 86, 135);
+        padding-top: 1rem;
+    }
+
+    .text-overlay h3{
+       margin-top: 0;
+    }
+
+    .text-overlay p {
+        width: 559px;
+    }
+
+    .text-overlay button {
+        background-color: white;
+        color: #113A55;
+    }
+    
+    .text-overlay button:hover {
+        background-color: #113A55;
+        color: white;
+    }
+
+    .news-header {
+        width: 100%;
+        height: auto;
+        padding: 40px 45px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font: normal normal bold 34px/34px Merriweather;
+        color: #1c5687;
+    }
+
+    .news-grid {
+        grid-row-gap: 1em;
+        grid-column-gap: 1em;
+        padding: 0px 40px;
+    }
+
+    .content {
+        height: auto;
+        width: 100vw;
+        background-color: #1c5687;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 60px;
+    }
+    
+    .div {
+        width: 720px;
+        height: auto;
+        background-color: white;
+        border-radius: 5px;
+        padding: 30px;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+
+    .content {
+        height: auto;
+        width: 100vw;
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 60px;
+        background-color: white;
+        border-bottom: solid 6px #1c5687;
+    }
+
+    .div {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 40px;
+        padding: 0;
+    }
+
+    .news-grid {
+        grid-row-gap: 1em;
+        grid-column-gap: 1em;
+        padding: 0px auto;
+    }
+
+    .img-box {
+        width: 280px;
+        height: 240px;
+        overflow: hidden;
+    }
+
+    .news-header {
+        width: 100vw;
+        height: 130px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        font: normal normal bold 22px/22px Merriweather;
+        color: #1c5687;
+    }
+
+    .text-overlay {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100vw;
+        height: fit-content;
+        background-color: rgba(28, 86, 135);
+        padding-top: 1rem;
+        padding: 20px;
+    }
+
+    .text-overlay p {
+        width: 279px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .hero {
+        background-color: white;
+    } 
+
+    .image-rotate-main {
+        max-width: 100vw;
+        display: flex;
+        height: fit-content;
+        align-items:flex-end;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .image-rotate-main img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 100px;
+    }
+
+    .image-rotate-secondary {
+        height: 255px;
+        margin-top: -255px;
+    }
+
+    .button-span {
+        bottom: 100px;
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-bottom: 20px;
+        align-self: center;
+    }
+
+    .logo-div{
+        display: none;
+    }
+    
+    .text-span {
+        height: 116px;
+        margin-left: 20px;
+    }
+
+    .mobile-span {
+        width: 100%;
+        height:fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        padding: 0;
+        margin-bottom: -150px;
+    }
+    
+    .mobile-span h1 {
+        color: #1C5687;
+        font: normal normal bold 30px/78px Merriweather;
+        line-height: 1.5;
+    }
+    
+    .mobile-span h5 {
+        font: normal normal normal 16px/25px Sintony;
+    }
+
+    .banner {
+        padding: 20px;
+    }
+}
+
+
